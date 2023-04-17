@@ -33,6 +33,7 @@ function loadPlanetsData() {
         reject(err);
       })
       .on("end", () => {
+        console.log(`${habitablePlanets.length} habitable plants found!`);
         resolve();
       });
   });
